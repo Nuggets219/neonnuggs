@@ -1,0 +1,611 @@
+#pageheader { /* actually affects the border in between the title of the node and the node content. who'da thunk? */
+ padding-bottom: 15px;
+ border-bottom: 1px solid #ebebeb;
+}
+
+#pagebody .item {
+ padding: 10px 0;
+}
+#pagebody .item .contentheader {
+ margin-bottom: 20px;
+}
+#pagebody .item .contentfooter {
+ margin-top: 20px;
+}
+
+/* NEW WRITEUPS NODELET */
+#newwriteups .contentinfo {
+ display: table;
+ width: 100%;
+}
+#newwriteups .contentinfo .title {
+ background-color: #311c40;
+ text-align: left;
+ font-weight: normal;
+ float: left;
+ width: 77%;
+}
+#newwriteups .contentinfo .type {
+ float: right;
+ width: 23%;
+ font-size: 80%;
+ text-align: right;
+}
+#newwriteups .contentinfo cite {
+ display: table-header-group;
+ color: #330257;
+ text-align: center;
+ background-color: #330257;
+ width: 100%;
+ padding: 2px;
+ border-bottom: 1px solid #ebebeb;
+}
+#newwriteups .contentinfo cite a {
+ background-color: #330257;
+ font-weight: bold;
+ display: inline-block;
+ margin-left: -1em;
+}
+
+/* End New Writeups fixes */
+
+/* archiewood fixed News For Noders headers. */
+.weblog .title,.weblog .date,.weblog .contentinfo cite,.nodelet .title {display: block;}
+.weblog .title {margin-bottom:0.5em;font-weight:bold;font-size:107%;}
+.weblog .title, .nodelet .title {font-weight: bold;}
+/*= end autofix added rules */
+
+/* DonJaime added next rule as a quick fix for New Writeups 
+
+   ... but nuggets can't see what's broken. if you see the valve purple, 
+   let me know.
+*/
+.nodelet .title {
+background-color: #ff00dc;
+text-align: center;
+}
+
+/* basic tags. */
+body, p, td, th, div {
+font-family: arial, helvetica, sans-serif;
+font-size: 12px;
+
+}
+h1 {
+font-family: arial, sans-serif;
+font-size: 140%;
+font-weight: bold;
+}
+h2 {
+font-size: 130%;
+font-weight: bold;
+}
+h3 {
+font-size: 120%;
+font-weight: bold;
+}
+h4 {
+font-size: 100%;
+font-weight: bold;
+}
+h5 {
+font-size: 90%;
+font-weight: bold;
+}
+h6 {
+font-size: 80%;
+font-weight: bold;
+}
+/* stuff in page header */
+.topic {
+margin-left: 20px;
+font-size: 12px;
+}
+tt, pre {
+font-family: "Courier New", Courier, monospace;
+}
+small {
+font-size: 85%;
+}
+big {
+font-size: 110%;
+}
+/* BAR AT TOP, WITH LOGO. */
+#header {
+background-image: url(https://s3.amazonaws.com/static.everything2.com/e2_others_02.gif);
+background-position: bottom left;
+background-repeat: no-repeat;
+width: 100%;
+position: absolute;
+top: 0;
+left: 0;
+padding-bottom: 7px; /* fucking with this value splits the logo.
+                        no clue why, it just does. very concerning.*/
+border-top: 0px #000 solid;
+border-bottom: 1px #ebebeb solid;
+z-index: 100;
+background-color: #000;
+}
+
+
+/* WRAPPER STARTS HERE- "the main page content & the nodelets */
+#wrapper { 
+padding-top: 45px;
+/*checked out*/
+padding-left:3px;
+}
+.oddrow  { /* Odd rows on tables. Weird it's here. */
+background-color: #240738; 
+}
+.nodetitle {
+/*    margin-top: 30px;
+margin-left: -5px;*/
+}
+.actions , .actions li {
+display: inline ;
+margin: 0 ;
+padding: 0 ;
+}
+.actions .action {
+padding-right : 5pt ;
+}
+
+#mainbody {
+position: relative;
+float: left;
+width: 100%;
+border-right: 2px black solid;
+margin-right: -7px;
+padding-right: 1px;
+}
+#mainbody #printlink {display: none;}
+#sidebar {
+position: relative;
+float: left;
+width: 175px;
+border-left: 2px # solid;
+padding-left: 3px;
+}
+/*Nodelets on right*/
+#wrapper {
+padding-right: 173px;    
+}
+#sidebar {
+margin-right: -150%;
+margin-left: 5px;
+}
+/*Nodelets on left*/
+/*
+#wrapper {
+padding-left: 200px;    
+}
+#sidebar {
+right: 207px;
+margin-left: -150%;
+}
+/* html #left {
+left: 200px;
+}
+*/
+/*end nodelet layout*/
+
+/*bottom of page stuff. BELOW the DASHED LINE.*/
+#footer {
+clear: both;
+width: 100%;
+text-align: center;
+padding-top: 2px;
+border-top: 2px #ebebeb dashed;
+background-color: #000;
+}
+
+/* COLORS ARE HERE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+body, #sidebar, #wrapper, #mainbody {
+color: #d6c1e6;
+background-color: #000000;
+}
+a:link {
+color: #b0f;
+}
+a:visited {
+color: #b5b6ff;
+}
+#welcome_message {
+float: right;
+width: 75%;
+margin-top: 3em;
+font-weight: bold;
+}
+#loglinks {
+float: right;
+width: 75%;
+}
+#loglinks .linklist {
+text-align: center;
+}
+#loglinks li {
+display: inline;
+list-style-type: none;
+margin-left: -55px;
+padding-left: 4em;
+padding-right: 4em;
+}
+#loglinks h3 {
+display: none;
+}
+#cooluserpicks {
+float: left;
+width: 23.3%;
+margin-top: -3em;
+}
+#cooluserpicks ul li {
+border-bottom: solid 3px #ebebeb;
+margin-left: -40px;
+list-style-type: none;
+padding: 3px 0 3px 0;
+text-align: center;
+}
+#cooluserpicks h3 {
+font-size: 10.5pt;
+margin-left: 0px;
+}
+#staff_picks {
+float: left;
+margin-left: 1.5em;
+text-align: center;
+width: 74%;
+}
+#staff_picks li {
+list-style-type: none; 
+margin-left: -40px;
+}
+#staff_picks .morelink {
+font-weight: bold; 
+float: right;
+}
+#creamofthecool {
+float: left;
+}
+#creamofthecool h2 a {
+font-size: 150%;
+}
+#creamofthecool_title {
+font-size: 18px;
+}
+#creamofthecool .contentinfo {
+padding: 1px;
+background-color: #311c40;
+}
+#creamofthecool .item {
+padding-bottom: 8px;
+border-bottom: solid 2px #ebebeb;
+}
+#creamofthecool .item .contentinfo {
+background-color: #240738;
+}
+#creamofthecool .item .morelink {
+font-weight: bold; 
+text-align: right;
+}
+#creamofthecool cite {float: right; font-style: normal;}
+/* "weblogs" are posts in groups. good to know! */
+.weblog .item{
+border-bottom: solid 2px;
+margin-bottom: 0.1em;
+}
+.weblog .item .contentinfo .title,
+.weblog .item .contentinfo cite,
+.weblog .item .date {
+background-color: #240738; /*controls the date, title, and author box */
+}
+.weblog .item .contentinfo .title{
+float: left;
+clear: left;
+line-height: 30px;
+margin-top: 0;
+width: 70%;
+}
+.weblog .item .contentinfo cite,
+.weblog .item .contentinfo .date{
+float: right;
+clear: right;
+line-height: 15px;
+width: 30%;
+margin-left: -1px;
+border-left: solid 1px;
+border-color: white;
+}
+.weblog .item .content,
+.weblog .item .content a,
+.weblog .item .content table,
+.weblog .morelink,
+.weblog .item .content h3{
+clear: left;
+}
+.remove{
+margin-bottom: 1em;
+}
+#frontpage_news .weblog .item .content{
+margin-right: -1px;
+}
+#frontpage_news h2 a {
+font-size: 150%;
+}
+#frontpage_news {
+float: left;
+}
+#frontpage_news_title{
+font-size: 12px;
+}
+/*THIS IS TO EDIT THE CONTENT LOGO BIT. DON'T GET IT MIXED UP WITH THE HEADER, YOU DOLT. */
+#e2logo {
+float: left;
+margin: 0;
+width: 100%;
+background-image: url(https://s3.amazonaws.com/static.everything2.com/e2_others_01.gif);
+background-color: #000;
+background-repeat: no-repeat;
+}
+#e2logo a {
+filter:alpha(opacity=0);
+-moz-opacity: 0;
+opacity: 0;
+width: 350px;
+height: 42px;
+display: block;
+float: left;
+}
+#metalinks {
+margin: 2px;
+padding:  0;
+display: block;
+.clear: both;
+text-align: center;
+font-size: 80%;
+}
+#metalinks li {
+display: inline;
+padding-right: 5px;
+margin-left: 5px;
+}
+#searchform {
+width: 50%;
+position: absolute;
+right: 10%;
+top: 3px;
+z-index: 10;
+text-align: right;
+}
+#search_form {width: 100%;}
+#searchform form label {
+font-size: 75%;
+clear: left;
+}
+#node_search{
+margin-right: -3px;
+}
+#search_submit {
+width: 49px;
+height: 28px;
+border: 0;
+background: transparent url(https://s3.amazonaws.com/static.everything2.com/search_button.gif) no-repeat center top;
+text-indent: -1000em;
+cursor: pointer; /* hand-shaped cursor */
+cursor: hand; /* for IE 5.x */
+}
+.nodelet {
+clear: both;
+padding: 0 2px;
+word-wrap: break-word;
+margin-bottom: 2px;
+}
+.nodelet h2 {
+display: block;
+margin: 7px -2px 0 -2px;
+text-align: center;
+font-size: 18px;
+font-family: "arial narrow";
+background-color: #240738;
+color: #ff00f2;
+}
+#epicenter h2, #chatterbox h2, #otherusers h2, #newwriteups h2, #vitals h2, #readthis h2, #everythingdeveloper h2, #newwriteupszen h2 {
+margin-top: -26px;
+filter: alpha(opacity=0);
+opacity: 0;
+background-color: #240738;
+color:#ff00f2;
+}
+#epicenter, #chatterbox, #otherusers, #newwriteups, #vitals, #readthis, #everythingdeveloper, #newwriteupszen   {
+padding-top: 26px;
+background-repeat: no-repeat;    
+}
+#epicenter {
+background-image: url(https://s3.amazonaws.com/static.everything2.com/epicenter.gif);
+}
+#chatterbox {
+background-image: url(https://s3.amazonaws.com/static.everything2.com/chatterbox.gif); 
+}
+/*url(https://nuggets219.github.io/chatterbox.gif);
+ alt. chatterbox image that does NOT want to work for me. I will try hosting it elsewhere,
+ maybe google drive. for now ANY nodelet with an image in it (Epicenter, Chatterbox, Other Users...)
+ will be brown. yaaaaaaaaaaaaaaaaaaaaaaay.
+*/
+
+#otherusers {
+background-image: url(https://s3.amazonaws.com/static.everything2.com/otherusers.gif);    
+}
+#vitals {
+background-image: url(https://s3.amazonaws.com/static.everything2.com/vitals.gif);
+}
+#newwriteups {
+background-image: url(https://s3.amazonaws.com/static.everything2.com/newwriteups.gif);    
+}
+#readthis {
+background-image: url(https://s3.amazonaws.com/static.everything2.com/readthis.gif);    
+}
+#everythingdeveloper {
+background-image: url(https://s3.amazonaws.com/static.everything2.com/everything_developer.gif);    
+}
+#newwriteupszen {
+background-image: url(https://s3.amazonaws.com/static.everything2.com/newwriteups.gif);
+}
+#displaytypelinks {
+text-align: right;
+}
+#softlinks {
+clear: both;
+}
+.writeuppage .item {
+border-bottom: 1px #ebebeb solid;
+padding-bottom: 5px;
+margin-bottom: 5px;
+}
+.createdby {
+text-align: right;
+}
+.writeuppage .item .content {
+}
+#firmlink, #isalso {
+font-size: 110%;
+text-indent: 30px;
+}
+#votebutton, #blabbutton {
+float: left;
+}
+#killbutton {
+float: right;
+}
+#msgnum {
+margin: 0;
+margin-bottom: 5px;
+}
+#msgunarchived {
+font-weight: bold;
+}
+#homenodepicbox {
+width: 50%;
+float: left;
+clear: left;
+overflow: auto;
+}
+#homenodeheader {
+clear: both;
+padding: 10px;
+}
+#homenodeheader dl {
+width: 50%;
+float: right;
+clear: right;
+margin: 0;
+background: 311c40;
+}
+#homenodeheader dt {
+display: block;
+background-color: #240738;
+padding: 1px;
+}
+#homenodeheader dd {
+margin: 0;
+padding: 1px;
+text-align: right;
+}
+hr.clear {
+clear: both;
+visibility: hidden;    
+}
+textarea {
+width: 100%;
+font-family:monospace;
+}
+#newwriteupszen .nodelet_content {
+width: 100%;
+}
+.infolist .contentinfo {
+clear: both;
+}
+.nodelet .infolist {list-style: none;
+margin: 0;
+padding: 0;
+}
+.nodelet .infolist li {
+clear: both;
+margin: 0;
+padding: 0;
+}
+/*=DISABLED .nodelet .infolist .author*/ {
+background-color: #240738;
+width: 100%;
+text-align: center;
+display: block;
+font-weight: bold;
+}
+/*=DISABLED .nodelet .infolist .title*/ {
+float:left;
+width:70%;
+}
+/*=DISABLED .nodelet .infolist .type*/ {
+float:left;
+text-align:right;
+width:30%;
+font-size: 80%;
+}
+/*=DISABLED .nodelet .infolist .type a*/ {
+font-size: 100%;
+}
+#epicenter_zen {
+font-size: 75%;
+text-align: center;
+width: 100%;
+background-color: #ff00dc;
+position: fixed;
+bottom: 0;
+margin: 0;
+left: 0;
+right: 0;
+padding: 3px;
+font-family: Candara,"Trebuchet MS",sans-serif;
+border-top: 1px black solid;
+}
+#epicenter_zen br {
+display: none;
+}
+#voteInfo {
+padding: 0 200px 0 100px;
+}
+#epicenter_zen a:link {
+color: inherit;
+}
+
+/* Swap added these for chatterlight */
+#chatterlight_mainbody { float: left; width: 70%; margin-left: 1%; margin-right: 1%}
+#message {width: 95%;}
+#chatterlight_NW { float: left; width: 160px; }
+#chatterlight_hints { display: none; }
+
+/* SOFTLINK COLORS */
+/* the old one was (https://youtu.be/mWMFTfaJaWM)
+  just kidding, I can tell a lot of work went into that gradient. which
+  will now be promptly thrown out because it's in that unfortunate middle
+  ground of "too much work to recreate manually without being able to use
+  inspect element" and "too simple & annoying to make a program to spit
+  out the correct CSS for me". 
+*/
+#softlinks { /* UNCHECK THE SOFTLINK COLOR GRADIENT */
+ background: #240738;
+}
+/*
+none of this works. /msg me if you figure it out.
+a:.unpopulated {
+ color: #c20466;
+}
+
+#writeup_add {
+ background:black;
+ color: c20466 //note: change this to the normal text color.
+}
+*/
+
+.evenrow {
+background:#000;
+}
+
