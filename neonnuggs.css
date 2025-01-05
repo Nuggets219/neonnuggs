@@ -65,11 +65,13 @@ background-color: #ff00dc;
 text-align: center;
 }
 
+
+
+
 /* basic tags. */
 body, p, td, th, div {
 font-family: arial, helvetica, sans-serif;
 font-size: 12px;
-
 }
 h1 {
 font-family: arial, sans-serif;
@@ -495,6 +497,7 @@ float: right;
 clear: right;
 margin: 0;
 background: 311c40;
+#border: 1px #ebebeb solid;
 }
 #homenodeheader dt {
 display: block;
@@ -505,6 +508,7 @@ padding: 1px;
 margin: 0;
 padding: 1px;
 text-align: right;
+background-color: #000;
 }
 hr.clear {
 clear: both;
@@ -594,19 +598,39 @@ color: inherit;
 #chatterlight_NW { float: left; width: 160px; }
 #chatterlight_hints { display: none; }
 
+/*this stuff for My Chatterlight by in10se. 
+love the layout, colors are a bit hard to look at for extended periods.
+*/
+
+
 /*
 none of this works. /msg me if you figure it out.
 a:.unpopulated { //changes the color of unpopulated links. preferably also gets
  color: #c20466; //modified to adjust the color of ones that are already clicked.
 }
-
-#writeup_add { //changes input fields
- background:black;
- color: #d6e1c6.
-}
 */
 
-.evenrow {
-background:#000;
+input, textarea, button, #writeup_doctext, select {
+ background-color:#000;
+ color: #f6e1ff;
 }
 
+[type="submit"]{ /* this applies to ALL elements with this type btw. Potentially fuckuppable, but damn if it ain't simple. */
+ background-color: #311c40; /*if anyone knows how to set this to only target input elements, let me know. */
+}
+
+.evenrow {
+background: #000;
+}
+
+form .writeup_add {
+ background-color: #000;
+ color:#f6e1ff;
+}
+
+#userinfo {
+ background-color: black;
+}
+#message {
+ color: #d6e1c6;
+}
