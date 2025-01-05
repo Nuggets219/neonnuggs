@@ -15,5 +15,4 @@ https://everything2.com/node/superdocnolinks/Style+Defacer
 
 note that currently homenodes are kind of broken right now- the even rows render as white, making itvery hard to read.
 
-on top of that, any nodelets with an image in them are brown because, basically, I can't see 
-the images I try to import from github to get them to replace the nodelets' title images. All the other ones should be okay, because they just used text. However, things like the Epicenter, Other Users, and Chatbox nodelets are very ugly still in comparison to the rest of the color scheme.
+A couple nodelets are still fucky- blame that on my photo editor being a free online one that only lets me save three images a day. Can't use anything else, so I'll grin and bear it. They should be all fixed soon!
