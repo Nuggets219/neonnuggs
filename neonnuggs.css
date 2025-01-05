@@ -419,26 +419,23 @@ color:#ff00f2;
 padding-top: 26px;
 background-repeat: no-repeat;    
 }
+
+/*All the images for the sidebar nodelets.*/
+
 #epicenter {
-background-image: url(https://s3.amazonaws.com/static.everything2.com/epicenter.gif);
+background-image: url(https://github.com/Nuggets219/neonnuggs/blob/main/resources/epicenter.png?raw=true);
 }
 #chatterbox {
-background-image: url(https://s3.amazonaws.com/static.everything2.com/chatterbox.gif); 
+background-image: url(https://github.com/Nuggets219/neonnuggs/blob/main/resources/chatterbox.png?raw=true);    
 }
-/*url(https://nuggets219.github.io/chatterbox.gif);
- alt. chatterbox image that does NOT want to work for me. I will try hosting it elsewhere,
- maybe google drive. for now ANY nodelet with an image in it (Epicenter, Chatterbox, Other Users...)
- will be brown. yaaaaaaaaaaaaaaaaaaaaaaay.
-*/
-
 #otherusers {
-background-image: url(https://s3.amazonaws.com/static.everything2.com/otherusers.gif);    
+background-image: url(https://github.com/Nuggets219/neonnuggs/blob/main/resources/otherusers.png?raw=tr);    
 }
 #vitals {
 background-image: url(https://s3.amazonaws.com/static.everything2.com/vitals.gif);
 }
 #newwriteups {
-background-image: url(https://s3.amazonaws.com/static.everything2.com/newwriteups.gif);    
+background-image: url(https://github.com/Nuggets219/neonnuggs/blob/main/resources/newwriteups.png?raw=true);    
 }
 #readthis {
 background-image: url(https://s3.amazonaws.com/static.everything2.com/readthis.gif);    
@@ -575,13 +572,11 @@ padding: 0 200px 0 100px;
 #epicenter_zen a:link {
 color: inherit;
 }
-
 /* Swap added these for chatterlight */
 #chatterlight_mainbody { float: left; width: 70%; margin-left: 1%; margin-right: 1%}
 #message {width: 95%;}
 #chatterlight_NW { float: left; width: 160px; }
 #chatterlight_hints { display: none; }
-
 /* SOFTLINK COLORS */
 /* the old one was (https://youtu.be/mWMFTfaJaWM)
   just kidding, I can tell a lot of work went into that gradient. which
@@ -593,15 +588,26 @@ color: inherit;
 #softlinks { /* UNCHECK THE SOFTLINK COLOR GRADIENT */
  background: #240738;
 }
+
+#chatterlight_mainbody { float: left; width: 70%; margin-left: 1%; margin-right: 1%}
+#message {width: 95%; color: blue;}
+#chatterlight_NW { float: left; width: 160px; }
+#chatterlight_hints { display: none; }
+
+/*this stuff for My Chatterlight by in10se. 
+love the layout, colors are a bit hard to look at for extended periods.
+*/
+
+
 /*
 none of this works. /msg me if you figure it out.
-a:.unpopulated {
- color: #c20466;
+a:.unpopulated { //changes the color of unpopulated links. preferably also gets
+ color: #c20466; //modified to adjust the color of ones that are already clicked.
 }
 
-#writeup_add {
+#writeup_add { //changes input fields
  background:black;
- color: c20466 //note: change this to the normal text color.
+ color: #d6e1c6.
 }
 */
 
