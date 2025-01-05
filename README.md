@@ -1,5 +1,5 @@
 # neonnuggs
-A custom theme for Everything2, made by yours truly. Mostly.
+A custom theme for Everything2, made by yours truly. Somewhat.
 
 A (not too heavily modified) version of Dim Jukka Emulation. All props to the creators of that. I mostly just recoloured it.
 
